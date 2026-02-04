@@ -16,13 +16,8 @@ body {
   background-color: #111;
 }
 
-.box1 {
+.box {
   height: 300px;
   width: 300px;
   background-color: crimson;
-}
-.box2 {
-  height: 300px;
-  width: 300px;
-  background-color: cadetblue;
 }
