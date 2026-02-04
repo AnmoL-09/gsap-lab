@@ -3,4 +3,5 @@ gsap.from("h1", {
   duration: 2,
   y: 30,
   delay: 1,
+  stagger: 1,
 });
