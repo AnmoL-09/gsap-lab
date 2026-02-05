@@ -10,6 +10,7 @@ gsap.from(".page2 .box", {
   delay: 1,
   duration: 2,
   rotate: 360,
+  scrollTrigger: ".page2 .box",
 });
 
 gsap.from(".page3 .box", {
@@ -17,4 +18,5 @@ gsap.from(".page3 .box", {
   delay: 1,
   duration: 2,
   rotate: 360,
+  scrollTrigger: ".page3 .box",
 });
