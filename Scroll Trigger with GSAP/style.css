@@ -11,50 +11,28 @@ body {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
 .page1 {
   height: 100%;
   width: 100%;
-  background-color: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: black;
 }
-
 .page2 {
   height: 100%;
   width: 100%;
-  background-color: rgb(18, 154, 199);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
+  background-color: rgb(71, 197, 239);
+  padding: 5vw;
 }
-
 .page3 {
   height: 100%;
   width: 100%;
-  background-color: rgb(10, 76, 98);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: black;
 }
 
-.box {
-  height: 300px;
-  width: 300px;
-  background-color: crimson;
-}
-
-h1 {
-  font-size: 60px;
-  position: relative;
-  background-color: red;
-  padding: 10px;
-}
-
-h2 {
-  font-size: 60px;
-  position: relative;
-  background-color: yellow;
+.page2 h1 {
+  font-size: 40vw;
+  text-transform: uppercase;
+  font-weight: 400;
 }
