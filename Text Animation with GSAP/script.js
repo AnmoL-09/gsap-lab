@@ -4,13 +4,34 @@ function breakText() {
 
   var splittedText = h1Text.split("");
 
+  var halfValue = splittedText.length / 2;
+
   var clutter = "";
 
-  splittedText.forEach(function (elem) {
-    clutter += `<span>${elem}</span>`;
+  splittedText.forEach(function (elem, idx) {
+    if (idx < halfValue) {
+      clutter += `<span class="a">${elem}</span>`;
+    } else {
+      clutter += `<span class="b">${elem}</span>`;
+    }
   });
 
   h1.innerHTML = clutter;
 }
 
 breakText();
+
+gsap.from(".a", {
+  y: 80,
+  duration: 0.8,
+  delay: 0.5,
+  opacity: 0,
+  stagger: 0.15,
+});
+gsap.from(".b", {
+  y: 80,
+  duration: 0.6,
+  delay: 0.5,
+  opacity: 0,
+  stagger: -0.15,
+});
